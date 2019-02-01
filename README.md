@@ -2,9 +2,9 @@
 
 ###INSTALL
     cp macchanger.sh /usr/local/bin
-    cp macchanger.service /lib/systemd/system
+    cp macchanger.service /etc/systemd/system
     systemctl enable macchanger.service
 
 ###SETUP
-    vim /usr/local/macchanger.sh
-Default interface is wlan0, change this if your interface is different.
+    vim /usr/local/bin/macchanger.sh
+Default interface's are wlp2s0 and enp1s0, change this if your interface is different.
