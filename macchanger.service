@@ -1,0 +1,10 @@
+[Unit]
+Description=Randomize MAC address at boot time with macchanger
+Before=wicd.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/macchanger.sh
+
+[Install]
+Alias=multi-user.target.wants/macchanger.service
